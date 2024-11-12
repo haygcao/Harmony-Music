@@ -29,6 +29,8 @@ jobs:
       - name: Linter
         run: flutter analyze
 
+      - run: flutter build appbundle -v
+      
       - name: Build APK
         run: flutter build apk
 
